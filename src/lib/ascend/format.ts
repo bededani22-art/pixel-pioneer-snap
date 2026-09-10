@@ -66,7 +66,7 @@ export function projectCurrencyLabel(p: Project): string {
 
 export function primaryCurrency(p?: Project | null): CurrencyCode {
   if (!p || !p.currencies.length) return "USD";
-  return [...p.currencies].sort((a, b) => b.pct - a.pct)[0].code;
+  return [...p.currencies].sort((a, b) => b.pct - a.pct)[0]?.code ?? "USD";
 }
 
 export function contractTypeLabel(p: Project): string {

@@ -175,6 +175,7 @@ export function concurrency(events: DelayEvent[]) {
     for (let j = i + 1; j < events.length; j++) {
       const a = events[i];
       const b = events[j];
+      if (!a || !b) continue;
       const opposed =
         (a.risk === "employer" && b.risk === "contractor") ||
         (a.risk === "contractor" && b.risk === "employer");

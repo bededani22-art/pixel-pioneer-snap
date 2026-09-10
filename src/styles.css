@@ -173,3 +173,12 @@
     box-shadow: 0 0 0 2px color-mix(in oklch, var(--color-primary) 30%, transparent);
   }
 }
+
+@keyframes ascend-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}

@@ -77,11 +77,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "ASCEND Contract & Claims Management" },
+      {
+        name: "description",
+        content:
+          "Contract administration, claims, EOT and delay management platform for ASCEND Consulting Engineers PLC.",
+      },
+      { name: "author", content: "ASCEND Consulting Engineers PLC" },
+      { property: "og:title", content: "ASCEND Contract & Claims Management" },
+      {
+        property: "og:description",
+        content:
+          "Contract administration, claims, EOT and delay management platform for ASCEND Consulting Engineers PLC.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },

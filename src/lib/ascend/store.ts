@@ -95,7 +95,7 @@ let sessionLoaded = false;
 const sessionListeners = new Set<() => void>();
 
 function emitSession() {
-  sessionListeners.add;
+  
   sessionListeners.forEach((l) => l());
 }
 
